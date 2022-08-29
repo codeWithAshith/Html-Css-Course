@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Html Form Layout</title>
+</head>
+<style type="text/css">
+body {
+    color: black;
+    margin: 25px auto;
+    width: 500px;
+    background-color: #dbc898;
+    text-align: justify;  
+}
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #009688;
+    background: #4CAF50;
+    border-radius: 15px;
+}
+input[type="reset"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fa0303;
+    background: #f04438;
+    border-radius: 15px;
+}
+input[type="button"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fa0303;
+    background: #f04438;
+    border-radius: 15px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #fa0303;
+    background: #f04438;
+    border-radius: 15px;
+}
+fieldset{
+    width: 460px;
+    max-width: 500px;
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+</style>
+<body>
+
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <hr>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+    <h4>&lt;input type="text"&gt; defines a one-line text input field:</h4>
+    <h4>&lt;input type="password"&gt; defines a password field:</h4>
+    <h4>&lt;input type="submit"&gt; defines a button for submitting form data to a form-handler</h4>
+    <h4>&lt;input type="reset"&gt; defines a reset button that will reset all form values to their default values:</h4>
+    <h4>&lt;input type="radio"&gt; defines a radio button.</h4>
+    <h4>&lt;input type="checkbox"&gt; defines a checkbox.</h4>
+    <h4>&lt;input type="button"&gt; defines a button:</h4>
+
+    <input type="button" onclick="alert('Click form input type button!')" value="Click Me!"> <br><br>
+    <button onclick="alert('Click from button tag!')">Click Me!</button><br><br>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br>
+            Gender:<br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            User password:<br>
+            <input type="password" name="psw"><br>
+            You have:<br>
+            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+            <input type="checkbox" name="vehicle2" value="Car"> I have a car <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+</html>

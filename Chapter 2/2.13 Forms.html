@@ -1,0 +1,111 @@
+<!-- 
+
+	HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.
+
+	There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.
+
+-->
+<html>
+
+<head>
+	<title>Text Input Control</title>
+</head>
+
+<body>
+
+	<h2>HTML Form Controls</h2>
+
+	<p>There are different types of form controls that you can use to collect data using HTML form </p>
+
+	<ul>
+		<li>Text Input Controls</li>
+		<li>Checkboxes Controls</li>
+		<li>Radio Box Controls</li>
+		<li>Select Box Controls</li>
+		<li>File Select Controls</li>
+		<li>File Select Controls</li>
+		<li>Clickable Buttons</li>
+		<li>Submit and Reset Button</li>
+	</ul>
+
+	<h3>Text Input Controls</h3>
+
+	<form >
+		Name: Single-line text input controls 
+		<input type = "text" name = "first_name" />
+		<br>
+		Password: Password input controls 
+		<input type = "password" name = "last_name" />
+		<br>
+		Comment: Multi-line text input controls 
+		<textarea rows = "5" cols = "50" name = "description">
+			Enter description here...
+		</textarea>
+	</form>
+
+	<h2>Checkbox Control</h2>
+
+	<form>
+		<input type = "checkbox" name = "maths" value = "on"> Maths
+		<input type = "checkbox" name = "physics" value = "on"> Physics
+	</form>
+	<form>
+		<input type = "checkbox" name = "maths" value = "on"> Maths
+		<input type = "checkbox" name = "physics" value = "on" checked> Physics
+	</form>
+
+	<h2>Radio Button Control</h2>
+
+	<form>
+		<input type = "radio" name = "subject" value = "maths"> Maths
+		<input type = "radio" name = "subject" value = "physics"> Physics
+	</form>
+
+	<form>
+		<input type = "radio" name = "subject" value = "maths"> Maths
+		<input type = "radio" name = "subject" value = "physics" checked> Physics
+	</form>
+
+	<h2>Select Box Control</h2>
+
+	<form>
+		<select name = "dropdown">
+			<option value = "Maths">Maths</option>
+			<option value = "Physics" selected>Physics</option>
+		</select>
+	</form>
+
+	<form>
+		<select name = "dropdown">
+			<option value = "Maths" multiple>Maths</option>
+			<option value = "Physics">Physics</option>
+		</select>
+	</form>
+
+	<h2>File Upload Box</h2>
+
+	<form>
+		<input type = "file" name = "fileupload" accept = "image/*" />
+	</form>
+
+	<h2>Button Controls</h2>
+
+	<form>
+		<input type = "submit" name = "submit" value = "Submit" />
+		<input type = "reset" name = "reset"  value = "Reset" />
+		<input type = "button" name = "ok" value = "OK" />
+		<input type = "image" name = "imagebutton" src = "images/HTML.jpg" />
+	</form>
+
+	<h2>Hidden Form Controls</h2>
+
+	<form>
+		<p>This is page 10</p>
+		<input type = "hidden" name = "pagename" value = "10" />
+		<input type = "submit" name = "submit" value = "Submit" />
+		<input type = "reset" name = "reset"  value = "Reset" />
+	</form>
+
+</body>
+
+</html>

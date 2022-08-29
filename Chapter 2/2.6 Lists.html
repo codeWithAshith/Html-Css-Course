@@ -1,0 +1,154 @@
+<!-- HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −
+
+<ul> − An unordered list. This will list items using plain bullets.
+
+<ol> − An ordered list. This will use different schemes of numbers to list your items.
+
+<dl> − A definition list. This arranges your items in the same way as they are arranged in a dictionary. 
+
+-->
+
+<html>
+
+<head>
+	<title>List</title>
+</head>
+
+<body>
+
+	<h2>HTML Unordered Lists</h2>
+	<p>An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML &gt;ul&lt; tag. Each item in the list is marked with a bullet.</p>
+
+	<ul>
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ul>
+
+	<h3>The type Attribute</h3>
+
+	<p>You can use type attribute for &gt;ul&lt; tag to specify the type of bullet you like. By default, it is a disc.</p>
+
+	<ul>
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ul>
+
+	<p> type = "square" </p>
+
+	<ul type = "square">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ul>
+
+	<p> type = "disc" </p>
+
+	<ul type = "disc">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ul>
+
+	<p> type = "circle" </p>
+
+	<ul type = "circle">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ul>
+
+	<h2>HTML Ordered Lists</h2>
+
+	<p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. This list is created by using &gt;ol&lt; tag. 
+	The numbering starts at one and is incremented by one for each successive ordered list element tagged with &gt;li&lt;.</p>
+
+	<ol>
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<h3>The type Attribute</h3>
+
+	<p>You can use type attribute for &gt;ul&lt; tag to specify the type of bullet you like. By default, it is a disc.</p>
+
+	<ol>
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<p> type = "1" </p>
+
+	<ol type = "1">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<p> type = "I" </p>
+
+	<ol type = "I">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<p> type = "i" </p>
+
+	<ol type = "i">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<p> type = "A" </p>
+
+	<ol type = "A">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<h3>The start Attribute</h3>
+
+	<p>You can use start attribute for &gt;ol&lt; tag to specify the starting point of numbering you need.</p>
+
+	<ol type = "i" start = "4">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+	<h3>Nested list</h3>
+
+	<ol type = "A">
+		<li>Beetroot</li>
+		<li>Ginger</li>
+			<ol type = "A">
+				<li>Beetroot</li>
+				<li>Ginger</li>
+				<li>Potato</li>
+				<li>Radish</li>
+			</ol>
+		<li>Potato</li>
+		<li>Radish</li>
+	</ol>
+
+</body>
+
+</html>

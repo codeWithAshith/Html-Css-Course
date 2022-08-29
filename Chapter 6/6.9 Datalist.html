@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Datalist</title>
+<body>
+
+	<h2>Definition and Usage</h2>
+	<p>The &lt;datalist&gt; tag specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+	<p>The &lt;datalist&gt; tag is used to provide an &quot;autocomplete&quot; feature on &lt;input&gt; 
+	elements. Users will see a drop-down list of pre-defined options as they input data.</p>
+	<p>Use the &lt;input&gt; element's list attribute to bind it together with a &lt;datalist&gt; element.</p>
+	<hr>
+
+
+	<form>
+		<input list="browsers" name="browser">
+		<datalist id="browsers">
+			<option value="Internet Explorer"/>
+			<option value="Firefox"/>
+			<option value="Chrome"/>
+			<option value="Opera"/>
+			<option value="Safari"/>
+		</datalist>
+		<input type="submit">
+	</form>
+
+	<p><strong>Note:</strong> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Dimensions</title>
+	<style>
+	div {
+		height: 200px;
+		width: 700px;
+		background-color: powderblue;
+	}
+	.max{
+		max-width: 700px;
+		width: 100%;
+		height: 100px;
+		background-color: powderblue;
+	}
+	p.ex1 {
+    	max-height: 50px;
+    	overflow: auto;
+	}
+</style>
+</head>
+<body>
+
+	<h2>Set the height and width of an element</h2>
+
+	<p>This div element has a height of 200px and a width of 500px:</p>
+
+	<div></div>
+
+
+	<h2>Set the max-width of an element</h2>
+	<p>This div element has a height of 100px and a max-width of 500px:</p>
+
+	<div class="max"></div>
+
+	<p>Resize the browser window to see the effect.</p>
+
+	<h1>The max-height Property</h1>
+
+	<h2>max-height: none (default):</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+	<h2>max-height: 50px:</h2>
+
+	<p class="ex1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+
+	<h2>max-height: 50px: and max width</h2>
+	
+	<p class="ex1 max">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+
+	<h2>max-height: 50px, max width and overflow</h2>
+	
+	<p class="ex1 max" style="overflow: hidden;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat.</p>
+
+</body>
+</html>

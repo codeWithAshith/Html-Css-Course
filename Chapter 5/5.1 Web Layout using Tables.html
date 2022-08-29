@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>HTML Table Layout</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+        }
+        table{
+            width: 80%;
+            margin: 0px auto;
+        }
+        .header{
+            background-color:#4caf50;
+        }
+        h1{
+            font-size:20px;
+            margin:10px 0;
+        }
+        .nav_items{
+            background-color:#ddec50; 
+            width:20%; 
+            vertical-align:top;
+        }
+        ul{
+            list-style:none; 
+            padding:0px; 
+            margin:0px;"
+        }
+        li{
+            margin-bottom:5px;
+        }
+        li a{
+             color:#3d677e;
+             text-decoration: none;
+             font-size: 18px;
+        }
+        #main_content{
+            background-color:#f0f0f0;
+            width:80%; 
+            height: 700px;
+            vertical-align:top;
+        }
+        h2{ 
+            margin:0px;
+        }
+        #footer{
+            background-color:#4caf50;
+        }
+        #footer p{
+            text-align:center; 
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="10px" cellspacing="0px">
+        <tr>
+            <td  colspan="2" class="header">
+                <h1>HTML Table Layout</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="nav_items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </td>
+            <td id="main_content">
+                <h2>Welcome to our site</h2>
+                <p>learn how to create websites using basic layout</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"  id="footer">
+                <p>copyright &copy; abc.com</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>                            

@@ -1,0 +1,170 @@
+
+<!--
+   The border-collapse specifies whether the browser should control the appearance of the adjacent borders that touch each other or whether each cell should maintain its style.
+
+   The border-spacing specifies the width that should appear between table cells.
+
+   The caption-side captions are presented in the <caption> element. By default, these are rendered above the table in the document. You use the caption-side property to control the placement of the table caption.
+
+   The empty-cells specifies whether the border should be shown if a cell is empty.
+
+   The table-layout allows browsers to speed up layout of a table by using the first width properties it comes across for the rest of a column rather than having to load the whole table before rendering it.
+-->
+
+<html>
+<head>
+
+   <title>Tables</title>
+
+   <style type="text/css">
+   table.one {border-collapse:collapse;}
+   table.two {border-collapse:separate;}
+   td.a {
+      border-style:dotted;
+      border-width:3px;
+      border-color:#000000; 
+      padding: 10px;
+   }
+   td.b {
+      border-style:solid;
+      border-width:3px;
+      border-color:#333333;
+      padding:10px;
+   }
+   table.oneOne {
+      border-collapse:separate;
+      width:400px;
+      border-spacing:10px;
+   }
+   table.twoTwo {
+      border-collapse:separate;
+      width:400px;
+      border-spacing:10px 50px;
+   }
+
+   caption.top {caption-side:top}
+   caption.bottom {caption-side:bottom}
+   caption.left {caption-side:left}
+   caption.right {caption-side:right}
+
+   table.empty{
+      width:350px;
+      border-collapse:separate;
+      empty-cells:hide;
+   }
+   td.empty{
+      padding:5px;
+      border-style:solid;
+      border-width:1px;
+      border-color:#999999;
+   }
+
+</style>
+
+</head>
+<body>
+
+   <h2>The border-collapse Property:</h2>
+
+   <table class="one">
+      <caption>Collapse Border Example</caption>
+      <tr><td class="a"> Cell A Collapse Example</td></tr>
+      <tr><td class="b"> Cell B Collapse Example</td></tr>
+   </table>
+   <br />
+
+   <table class="two">
+      <caption>Separate Border Example</caption>
+      <tr><td class="a"> Cell A Separate Example</td></tr>
+      <tr><td class="b"> Cell B Separate Example</td></tr>
+   </table>
+
+   <h2>The border-spacing Property</h2>
+
+   <p>The border-spacing property specifies the distance that separates adjacent cells'. borders. It can take either one or two values; these should be units of length.</p>
+
+   <p>If you provide one value, it will applies to both vertical and horizontal borders. Or you can specify two values, in which case, the first refers to the horizontal spacing and the second to the vertical spacing −</p>
+
+   <table class="oneOne" border="1">
+      <caption>Separate Border Example with border-spacing</caption>
+      <tr><td> Cell A Collapse Example</td></tr>
+      <tr><td> Cell B Collapse Example</td></tr>
+   </table>
+   <br />
+
+   <table class="twoTwo" border="1">
+      <caption>Separate Border Example with border-spacing</caption>
+      <tr><td> Cell A Separate Example</td></tr>
+      <tr><td> Cell B Separate Example</td></tr>
+   </table>
+
+   <h2>The caption-side Property</h2>
+
+   <p>The caption-side property allows you to specify where the content of a &gt;caption&lt; element should be placed in relationship to the table. The table that follows lists the possible values.</p>
+
+   <p>This property can have one of the four values top, bottom, left or right. The following example uses each value.</p>
+
+
+   <table style="width:400px; border:1px solid black;">
+      <caption class="top">
+         This caption will appear at the top
+      </caption>
+      <tr><td > Cell A</td></tr>
+      <tr><td > Cell B</td></tr>
+   </table>
+   <br />
+
+   <table style="width:400px; border:1px solid black;">
+      <caption class="bottom">
+         This caption will appear at the bottom
+      </caption>
+      <tr><td > Cell A</td></tr>
+      <tr><td > Cell B</td></tr>
+   </table>
+   <br />
+
+   <table style="width:400px; border:1px solid black;">
+      <caption class="left">
+         This caption will appear at the left
+      </caption>
+      <tr><td > Cell A</td></tr>
+      <tr><td > Cell B</td></tr>
+   </table>
+   <br />
+
+   <table style="width:400px; border:1px solid black;">
+      <caption class="right">
+         This caption will appear at the right
+      </caption>
+      <tr><td > Cell A</td></tr>
+      <tr><td > Cell B</td></tr>
+   </table>
+
+   <h2>The empty-cells Property</h2>
+
+   <p>The empty-cells property indicates whether a cell without any content should have a border displayed.</p>
+
+   <p>This property can have one of the three values - show, hide or inherit</p>
+
+   <table class="empty">
+      <tr>
+         <th></th>
+         <th>Title one</th>
+         <th>Title two</th>
+      </tr>
+      
+      <tr>
+         <th>Row Title</th>
+         <td class="empty">value</td>
+         <td class="empty">value</td>
+      </tr>
+      
+      <tr>
+         <th>Row Title</th>
+         <td class="empty">value</td>
+         <td class="empty"></td>
+      </tr>
+   </table>
+
+</body>
+</html> 
